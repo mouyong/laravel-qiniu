@@ -57,7 +57,7 @@ class BusinessService
         };
 
         if (function_exists('tenant') && tenant()) {
-            $path = sprintf('%s/%s', tenant('id'), $data['path']);
+            $path = sprintf('%s%s/%s', config('tenancy.filesystem.suffix_base'), tenant('id'), $data['path']);
         }
 
         $service = static::make();
