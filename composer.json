@@ -28,14 +28,5 @@
         "mouyong/laravel-config": "dev-master",
         "overtrue/laravel-filesystem-qiniu": "^2.0",
         "fresns/cmd-word-manager": "^1.2"
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Plugins\\LaravelQiNiu\\Providers\\LaravelQiNiuServiceProvider",
-                "Plugins\\LaravelQiNiu\\Providers\\CmdWordServiceProvider"
-            ],
-            "aliases": []
-        }
     }
 }
